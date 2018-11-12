@@ -24,7 +24,7 @@ def xyplot(x1=None, y1=None, x2=None, y2=None, x3=None, y3=None, title=None, fna
 
 np.random.seed(123123)
 x = np.array([0, 1, 2, 3, 4, 5])
-y = 3*x+2
+y = 3*x+3
 # Add the noise
-t = y + 5*(np.random.rand(6)-0.5)
+t = y + 6*(np.random.rand(6)-0.5)
 xyplot(x,t,x2=x,y2=y,title=r'$y=3x+2$',fname='simple-linear.pdf')
